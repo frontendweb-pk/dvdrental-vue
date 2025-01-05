@@ -11,14 +11,13 @@
 import { useAuth } from '@/store/auth';
 import { ref } from 'vue';
 
-const auth = useAuth()
-const values = ref({
-    username: '',
-    password: ''
-})
+const auth = useAuth() // import the useAuth function from the auth store
+const values = ref({ username: '', password: '' })
 
+// handleLogin function that will be called when the form is submitted
 const handleLogin = (e: Event) => {
     e.preventDefault()
-    auth.login(values.value)
+    auth.login(values.value) // call the login method from the auth store
 }
+
 </script>

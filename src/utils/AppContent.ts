@@ -20,4 +20,6 @@ export const AppContent = {
   info: "Info",
   required: "Required",
   invalid: "Invalid",
+  dashboard: "Dashboard",
+  welcome: "Welcome",
 };
